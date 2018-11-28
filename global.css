@@ -1,0 +1,34 @@
+body{
+    color:#fff;
+    line-height:1.4;
+    margin:0;
+    font-family:'Roboto',sans-serif;
+}
+
+#wrap {
+    width:85%;
+    margin:0 auto
+    }
+
+#nav-bar{  
+    border-bottom:4px solid #428bca;
+    font-size:17px;
+    background:#333;
+}
+
+a {
+    text-decoration:none;
+    -webkit-transition:.2s ease-out;
+    -moz-transition:.2s ease-out;
+    -o-transition:.2s ease-out;
+    transition:.2s ease-out
+    }
+    
+    a:hover {
+    color:#fff;
+    cursor:pointer
+    }
+
+.nav-block{
+    padding: 0px 20px;
+}
