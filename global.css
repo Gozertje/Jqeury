@@ -3,11 +3,13 @@ body{
     line-height:1.4;
     margin:0;
     font-family:'Roboto',sans-serif;
+    background-color: #f4f4f4;
 }
 
 #wrap {
     width:85%;
-    margin:0 auto
+    margin:0 auto;
+    margin-top: 5%;
     }
 
 #nav-bar{  
@@ -30,5 +32,37 @@ a {
     }
 
 .nav-block{
-    padding: 0px 20px;
+    padding: 10px 20px;
+    display: block;
+}
+
+.inline{
+    display: inline;
+    text-align: center;
+}
+
+.cards{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 40%;
+    background-color: #428bca;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.container{
+    border: none;
+    text-align: center;
+}
+
+.container button{
+    background-color: #333;
+    padding: 15px 32px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+h2{
+    text-align: center
 }
