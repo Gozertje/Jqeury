@@ -36,11 +36,6 @@ a {
     display: block;
 }
 
-.inline{
-    display: inline;
-    text-align: center;
-}
-
 .cards{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     width: 40%;
@@ -48,6 +43,7 @@ a {
     padding: 10px;
     border-radius: 5px;
     margin: 5px;
+    position: relative;
 }
 
 .container{
