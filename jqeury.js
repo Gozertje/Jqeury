@@ -62,12 +62,12 @@ var colors = new Array(
 
 $(document).ready(function(){
     $("#button1").click(function(){
-        $("h2").toggle();
+        $("h2").slideUp(2000).slideDown(2000);
     });
 });
 
 $(document).ready(function(){
     $("#button2").click(function(){
-        $("h1").toggle();
+        $("h1").slideToggle("Hallo");
     });
 });
