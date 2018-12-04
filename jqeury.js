@@ -71,3 +71,9 @@ $(document).ready(function(){
         $("h1").slideToggle("Hallo");
     });
 });
+
+$(document).ready(function(){
+  $("#button2").click(function(){
+      $("h1").slideToggle("Hallo");
+  });
+});
