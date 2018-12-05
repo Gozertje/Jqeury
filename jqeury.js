@@ -68,12 +68,25 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#button2").click(function(){
-        $("h1").slideToggle("Hallo");
+        $("#h1slide").slideToggle("Hallo");
+    });
+});
+
+
+$(document).ready(function(){
+    $("#button3").click(function(){
+        $("#text").text("Dit veranderd de tekst.");
     });
 });
 
 $(document).ready(function(){
-  $("#button2").click(function(){
-      $("h1").slideToggle("Hallo");
-  });
+	$("#button4").click(function(){
+        $("ul").append("<li>Item toevoegen</li>");
+    });
+});
+
+$(document).ready(function(){
+    $("#button5").click(function(){
+        $("#wrap").remove();
+    });
 });
