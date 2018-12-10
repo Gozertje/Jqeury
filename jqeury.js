@@ -92,7 +92,15 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $("#button6").click(function(){
-        $("#").remove();
+	$("#button6").click(function(){
+		var div = $("div.animate"); 
+			div.animate({height:'500px',
+		});
+	});
+});
+
+$(document).ready(function(){
+    $("#button7").click(function(){
+        alert("Poep op je brood!?");
     });
 });
