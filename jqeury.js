@@ -104,3 +104,9 @@ $(document).ready(function(){
         alert("Poep op je brood!?");
     });
 });
+
+$(document).ready(function(){
+    $("#button8").click(function(){
+        location.reload(true);
+    });
+});
