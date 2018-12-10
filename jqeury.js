@@ -93,8 +93,9 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$("#button6").click(function(){
-		var div = $("div.animate"); 
-			div.animate({height:'toggle'
+		var div = $("div"); 
+			div.animate({
+				height: 'toggle'
 		});
 	});
 });
