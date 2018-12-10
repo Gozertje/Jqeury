@@ -62,7 +62,7 @@ var colors = new Array(
 
 $(document).ready(function(){
     $("#button1").click(function(){
-        $("h2").slideUp(2000).slideDown(2000);
+        $("h1#h1slide2").slideUp(2000).slideDown(2000);
     });
 });
 
@@ -88,5 +88,11 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#button5").click(function(){
         $("#wrap").remove();
+    });
+});
+
+$(document).ready(function(){
+    $("#button6").click(function(){
+        $("#").remove();
     });
 });
