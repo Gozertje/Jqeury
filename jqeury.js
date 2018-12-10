@@ -94,7 +94,7 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$("#button6").click(function(){
 		var div = $("div.animate"); 
-			div.animate({height:'500px',
+			div.animate({height:'toggle'
 		});
 	});
 });
