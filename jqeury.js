@@ -75,7 +75,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#button3").click(function(){
-        $("#text").text("Dit veranderd de tekst.");
+        $("#text").text("De tekst is veranderd.");
     });
 });
 
