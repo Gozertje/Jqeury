@@ -90,3 +90,17 @@ $(document).ready(function(){
         $("#wrap").remove();
     });
 });
+
+$(document).ready(function(){
+	$("#button6").click(function(){
+		var div = $("div.animate"); 
+			div.animate({height:'500px',
+		});
+	});
+});
+
+$(document).ready(function(){
+    $("#button7").click(function(){
+        alert("Poep op je brood!?");
+    });
+});
