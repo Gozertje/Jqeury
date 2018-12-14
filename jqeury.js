@@ -96,7 +96,8 @@ $(document).ready(function(){
 		var div = $("div"); 
 			div.animate({
 				height: 'toggle'
-		});
+        });
+        $("section").css("optacicy", "red");
 	});
 });
 

@@ -6,6 +6,11 @@ body{
     background-color: #f4f4f4;
 }
 
+section{
+    opacity: 0;
+  filter: alpha(opacity=0); 
+}
+
 #gradient{
   width: 100%;
   height: 100%;
