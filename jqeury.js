@@ -89,6 +89,7 @@ $(document).ready(function(){
     $("#button5").click(function(){
         $("#wrap").remove();
     });
+
 });
 
 $(document).ready(function(){
@@ -97,7 +98,7 @@ $(document).ready(function(){
 			div.animate({
 				height: 'toggle'
         });
-        $("section").css("optacicy", "red");
+        $("section").css({"opacity" : "1"});
 	});
 });
 
