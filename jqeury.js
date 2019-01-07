@@ -113,3 +113,9 @@ $(document).ready(function(){
         location.reload(true);
     });
 });
+
+$(document).ready(function(){
+    $("button").click(function(){
+      $("#div1").load("demo_test.txt");
+    });
+  });
