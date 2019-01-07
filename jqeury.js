@@ -115,7 +115,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $("button").click(function(){
+    $("#button9").click(function(){
       $("#div1").load("demo_test.txt");
     });
   });
