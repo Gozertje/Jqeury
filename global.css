@@ -30,10 +30,6 @@ section{
     background:#333;
 }
 
-#center{
-    text-align: center;
-}
-
 a {
     text-decoration:none;
     -webkit-transition:.2s ease-out;

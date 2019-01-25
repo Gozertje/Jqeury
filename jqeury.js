@@ -89,7 +89,6 @@ $(document).ready(function(){
     $("#button5").click(function(){
         $("#wrap").remove();
     });
-
 });
 
 $(document).ready(function(){
@@ -98,7 +97,7 @@ $(document).ready(function(){
 			div.animate({
 				height: 'toggle'
         });
-        $("section").css({"opacity" : "1"});
+        $("section").css("optacicy", "red");
 	});
 });
 
@@ -114,8 +113,29 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(function(){
-    $("#button9").click(function(){
-      $("#div1").load("demo_test.txt");
-    });
-  });
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("ajax-container").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "ajax.txt", true);
+  xhttp.send();
+}
+
+function showHint(str) {
+  var xhttp;
+  if (str.length == 0) { 
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+  }
+  xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("txtHint").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "gethint.php?q="+str, true);
+  xhttp.send();   
+}

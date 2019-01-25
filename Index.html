@@ -1,87 +1,100 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>index pagina</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--Sthylsheets-->
-    <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-    <!--Javascript-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script src="jqeury.js"></script>
-</head>
-
-<body id="gradient" />
-    <div id="nav-bar">
-        <a class="nav-block">Home</a>
-    </div>
-    <div id="wrap">
-            <div class="w3-bar">
+   <head>
+      <title>index pagina</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--Sthylsheets-->
+      <link rel="stylesheet" href="global.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <!--Javascript-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+      <script src="jqeury.js"></script>
+   </head>
+   <body id="gradient" />
+      <div id="nav-bar">
+         <a class="nav-block">Home</a>
+      </div>
+      <div id="wrap">
+         <div class="w3-bar">
             <div class="cards w3-left">
-                <h1 id="h1slide2">slideup/slidedown</h1>
-                <div class="container">
-                    <button id="button1">klik hier eens op</button>
-                </div>
+               <h1 id="h1slide2">slideup/slidedown</h1>
+               <div class="container">
+                  <button id="button1">klik hier eens op</button>
+               </div>
             </div>
             <div class="cards w3-right">
-                <h1 id="h1slide">slidetoggle</h1>
-                <div class="container">
-                    <button id="button2">klik hier eens op</button>
-                </div>
+               <h1 id="h1slide">slidetoggle</h1>
+               <div class="container">
+                  <button id="button2">klik hier eens op</button>
+               </div>
             </div>
-        </div>
+         </div>
+         <div class="w3-bar">
+            <div class="cards w3-left">
+               <h1 id="text">veranderd de tekst</h1>
+               <div class="container">
+                  <button id="button3">klik hier eens op</button>
+               </div>
+            </div>
+            <div class="cards w3-right">
+               <ul>
+                  <li>Dit is een lijst</li>
+                  <li>Opdracht 1</li>
+               </ul>
+               <div class="container">
+                  <button id="button4">klik hier eens op</button>
+               </div>
+            </div>
+         </div>
+         <div class="w3-bar">
+            <div class="cards w3-left">
+               <h1>Verwijder alles</h1>
+               <div class="container">
+                  <button id="button5">klik hier eens op</button>
+               </div>
+            </div>
+            <div class="animate cards w3-right">
+               <h1>animate</h1>
+               <div class="container">
+                  <button id="button6">klik hier eens op</button>
+               </div>
+            </div>
+         </div>
+         <div class="w3-bar">
+            <div class="cards w3-left">
+               <h1>alert knop</h1>
+               <div class="container">
+                  <button id="button7">klik hier eens op</button>
+               </div>
+            </div>
+			<div class="animate cards w3-right">
+               <h1 id="demo">Ajax load file</h1>
+               <div class="container" id="ajax-container">
+                  <button id="button8" onclick="loadDoc()">klik hier eens op</button>
+               </div>
+            </div>
+         </div>
 		<div class="w3-bar">
-        <div class="cards w3-left">
-            <h1 id="text">veranderd de tekst</h1>
-            <div class="container">
-                <button id="button3">klik hier eens op</button>
+            <div class="cards w3-left">
+               <h1>alert knop</h1>
+               <div class="container">
+                  <button id="button8">klik hier eens op</button>
+               </div>
             </div>
-        </div>
-        <div class="cards w3-right">
-            <ul>
-                <li>Dit is een lijst</li>
-                <li>Opdracht 1</li>
-            </ul>
-            <div class="container">
-                <button id="button4">klik hier eens op</button>
+			<div class="animate cards w3-right">
+               <h1 id="demo">Ajax name suggestions</h1>
+               <div class="container" id="ajax-container">
+                  <input type="text" id="txt1" onkeyup="showHint(this.value)"></p>
+				  <p>Suggestions: <span id="txtHint"></span></p>
+               </div>
             </div>
-        </div>
-		</div>
-		<div class="w3-bar">
-        <div class="cards w3-left">
-            <h1>Verwijder alles</h1>
-            <div class="container">
-                <button id="button5">klik hier eens op</button>
-            </div>
-        </div>
-		<div class="animate cards w3-right">
-             <h1>animate</h1>
-             <div class="container">
-                <button id="button6">klik hier eens op</button>
-             </div>
-        </div>
-		</div>
-		<div class="w3-bar">
-		<div class="cards w3-left">
-            <h1>alert knop</h1>
-            <div class="container">
-                <button id="button7">klik hier eens op</button>
-            </div>
-        </div>
-        <div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
-
-        <button id="button9">Get External Content</button>
-        
-            </div>
-        </div>    
-<section>
- <h1>Reload</h1>
-    <button id="button8">klik hier eens op</button>
-</section>
-
+         </div>
+      </div>
+      <section>
+         <h1>Reload</h1>
+         <button id="button8">klik hier eens op</button>
+      </section>
+   </body>
 </html>
