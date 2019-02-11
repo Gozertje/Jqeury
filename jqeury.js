@@ -107,11 +107,18 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(function(){
-    $("#button8").click(function(){
-        location.reload(true);
-    });
-});
+var url = "https://aws.random.cat/meow";
+
+$("#btn").on("click", function() {
+  $.getJSON(url)
+    .done(function(data) {
+      console.log(data);
+      $("#img").attr("src", data.file);
+    })
+    .fail(function() {
+      console.log("Something went wrong!");
+    })
+})
 
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
@@ -126,6 +133,8 @@ function loadDoc() {
 
 function showHint(str) {
   var xhttp;
+  e.preventDefault();
+  e.stopPropagation();
   if (str.length == 0) { 
     document.getElementById("txtHint").innerHTML = "";
     return;
@@ -139,3 +148,25 @@ function showHint(str) {
   xhttp.open("GET", "gethint.php?q="+str, true);
   xhttp.send();   
 }
+
+$(document).ready(function(){
+$("#getBtn").click(function() {
+  getRandomCat();
+});
+});
+
+
+
+
+function getRandomCat() {
+  $.getJSON("https://aws.random.cat/meow")
+    .done(function(data) {
+      console.log(data);
+      $("img").attr("src", data.file);
+    })
+    .fail(function() {
+      alert("Request is not PAWsibble!");
+    });
+}
+
+getRandomCat();

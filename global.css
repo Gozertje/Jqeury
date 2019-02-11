@@ -77,3 +77,19 @@ h1, h2{
 
 }
 
+.button {
+	    background-color: #333;
+    padding: 15px 32px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+
+}
+
+
+#imgSrc {
+  margin-top: 60px;
+  margin: 0;
+  height: 400px;
+  width: 80%;
+}
